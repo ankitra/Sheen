@@ -60,3 +60,207 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+# CocoaPods
+Pods/
+
+# Xcode
+#
+# gitignore version: 5.5.0
+# https://github.com/github/gitignore/blob/main/Swift.gitignore
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+!xcuserdata
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.xcuserstate
+**/.xcode.env.local
+**/.xcode.global.xcsettings  # Xcode User settings (local)
+**/.xcode.project.xcsettings  # Project-level settings (should not be ignored for workspaces)
+
+## Xcode 15+ settings
+**/.xcsettings/**
+!**/.xcsettings/*  # Keep the template files
+
+## Obj-C/Swift
+#
+# https://github.com/github/gitignore/blob/main/Objective-C.gitignore
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# https://github.com/github/gitignore/blob/main/Swift.gitignore
+
+## Apple official swiftignore and recommended contents
+# https://swift.org/package-manager/
+
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+# *.xcodeproj
+# *.xcodeproj/*
+# !*.xcodeproj/*.xcodeproj
+# !*.xcodeproj/*.xcworkspace
+
+.swiftpm/
+Packages/
+.xcodeproj/
+*.xcodeproj/*
+!*.xcodeproj/*.xcodeproj
+!*.xcodeproj/*.xcworkspace
+
+## SPM build artifacts
+.build/
+.swiftpm/
+DerivedData/
+
+# Tuist
+# https://tuist.io
+# Tuist-generated files
+.swiftpm/
+*.xcworkspace
+!*.xcworkspace/contents.xcworkspacedata
+*.xcodeproj
+!*.xcodeproj/project.pbxproj
+
+# IDE
+#
+# https://github.com/github/gitignore/blob/main/Global/macOS.gitignore
+# https://github.com/github/gitignore/blob/main/Global/Xcode.gitignore
+
+## Xcode
+#
+# .DS_Store is a file that contains the attributes of a folder or a build volume's folder,
+# such as the position of icons, background picture, and so on.
+# macOS: https://en.wikipedia.org/wiki/.DS_Store
+
+.DS_Store
+
+# Xcode
+#
+# gitignore contents: https://github.com/github/gitignore/blob/main/Global/Xcode.gitignore
+
+## Xcode Workspace
+#
+# https://github.com/github/gitignore/blob/main/Swift.gitignore
+# https://github.com/github/gitignore/blob/main/Global/macOS.gitignore
+
+*.xcworkspace
+!*.xcworkspace/contents.xcworkspacedata
+!*.xcworkspace/xcshareddata/
+!*.xcworkspace/xcshareddata/swiftpm/
+
+## Xcode 15+ new default ignore list
+**/.xcshareddata/
+!**/.xcshareddata/*.xcscmblueprint
+!**/.xcshareddata/*.xcworkspacedata
+
+## IDE
+#
+# Xcode 15+ default ignores
+*.xcscmblueprint
+*.xcworkspacedata
+**/.xcworkspacedata
+!**/.xcworkspacedata/*.xcworkspacedata
+
+## Settings
+#
+# .xcuserstate is a file that contains the state of the current Xcode window.
+# It is auto-generated and should not be tracked by Git.
+**/.xcuserstate
+**/*.xcuserstate
+
+## Auto Layout
+#
+# Interface Builder
+*.storyboard
+*.xib
+
+## UIKit
+#
+# *.storyboard and *.xib files contain references to external resources.
+# These are not part of the source code and should not be tracked.
+*.storyboard
+*.xib
+*.nib
+
+# AppCode
+#
+# https://github.com/JetBrains/swift-files/blob/master/.gitignore
+
+.idea/
+*.iml
+
+# VS Code
+#
+# https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local configuration (secrets, API keys, etc.)
+#
+# DO NOT commit local configuration files that may contain sensitive data
+LocalConfig/
+AppConfig/
+Configuration/
+*config.plist
+!ExampleConfig.plist
+
+# CI/CD
+#
+# https://github.com/github/gitignore/blob/main/Global/Jenkins.gitignore
+# https://github.com/github/gitignore/blob/main/Global/GitLab.gitignore
+
+.jenkins/
+Pods-Jenkins/
+build/
+*.log
+
+# Logs
+#
+# https://github.com/github/gitignore/blob/main/Global/macOS.gitignore
+
+*.log
+
+# Temporary files
+#
+# https://github.com/github/gitignore/blob/main/Global/macOS.gitignore
+
+*.swp
+*~
+.#*
+.#.*#
+
+# Claude
+#
+# Claude Code local data, memory, and project-specific settings
+
+.claude/
+.claude/settings.json
+.claude/memory/
+.claude/plans/
+.claude/tasks/
