@@ -1,0 +1,36 @@
+name: Sheen
+options:
+  bundleIdPrefix: com.ankitra
+  deploymentTarget:
+    iOS: "17.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+
+targets:
+  Sheen:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources/Sheen
+      - path: Resources/Assets.xcassets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ankitra.sheen.app
+        INFOPLIST_FILE: Resources/Info.plist
+        SWIFT_OBJC_BRIDGING_HEADER: "$(SRCROOT)/Sources/Sheen/include/Sheen-Bridging-Header.h"
+    dependencies:
+      - package: KeychainAccess
+      - package: libgit2-apple
+        product: Git
+      - package: libgit2-apple
+        product: CGit
+
+packages:
+  KeychainAccess:
+    url: https://github.com/kishikawakatsumi/KeychainAccess
+    from: "4.2.0"
+  libgit2-apple:
+    url: https://github.com/ankitra/libgit2-apple
+    branch: main
